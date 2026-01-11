@@ -22,7 +22,7 @@ namespace SmartEx3.Services.AI
         public GeminiAIService(ServiceManager serviceManager, string apiKey = null)
         {
             _serviceManager = serviceManager ?? throw new ArgumentNullException(nameof(serviceManager));
-            _apiKey = apiKey ?? "AIzaSyA1fL73vLg9D-ZCmOvy3mlKSvRoW5aFj8A";
+            _apiKey = apiKey ?? "";
             _httpClient = new HttpClient
             {
                 Timeout = TimeSpan.FromSeconds(30)
